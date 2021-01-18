@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ::Shopping UI
+        </title>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+   .sizes{
+            border-style:round;
+            padding:4px;
+            font-size: small;
+        }
+        button{
+            border-radius: 360%;
+        }
+        .float-left{
+        color: gray;
+        float:right;
+        background-color: black;
+    }  
+    .caption{
+        text-align: center;
+    } 
+    .cart{
+        border:1px solid black;
+        background-color: black;
+        color: white;
+        padding:5px;
+    }     
+    
+    .container{
+        justify-content: none;
+    }
+    .order{
+        margin-left: 10px;
+    }
+    .form-group{
+        margin-right: 225px;
+    }
+    .nar-top{
+        margin-top:50px;
+    }
+    .text-center{
+        color: gray;
+        font-size: small;       
+    }
+    .round > div{
+      text-align: center;
+        border-radius: 50%;
+        background-color:lightgray;
+        font-size: 9px;
+        font-weight: bold;
+        height: 30px;
+        width: 30px;
+        border:none;  
+        margin-bottom: 15px; 
+        margin-right: 9px;
+        padding-left:10px;
+        padding-top:9px;        
+    }
+    .round{
+      margin-left: 50px;      
+    }
+    .rmg1{
+        margin-left: 0px;
+    }
+   
+    .navbar-down{
+      padding-top:20px;
+    }
+    .cont1{
+      padding-top: -20px;
+    }
+    .text-center{
+        color: lightgray;
+        font-size: x-small;
+        padding-left: 12px;        
+    }
+    .thumbnail{
+      border: none;      
+    }
+    button{
+      height: 29px;
+      width: 70px;
+      margin-left:60px;
+      margin-bottom: none;
+    }
+    .float-left{
+      height: 25px;
+      width: 75px;
+      font-size: 10px;
+      padding:5px;
+      border-radius: 2px;
+      float: right;
+    }
+    .row2{
+      margin-left:190px;
+    }
+    .cont2{
+      padding-left:360px;
+    }
+    .thumbnail1{
+      width: 120px;
+    }
+
+    </style>
+    </head>
+
+    <body>
+        <!---first nav sizes-->
+        <nav class="navbar navbar-default" style="margin-top:40px;">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Sizes: </a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul-->
+                <form class="navbar-form navbar-right">                    
+                  <div class="form-group">
+                      <label>Orders</label>
+                    <input type="text" class="form-control" placeholder="Select" >
+                  </div>
+                  <!--button type="submit" class="btn btn-default">Submit</button-->
+                </form>
+                <ul class="nav navbar-nav navbar-left">
+                  <li><a href="" style="margin-left: 180px">16 Products found</a></li>
+                  <!--li><a href="" style="margin-left: 790px">Orders</a></li-->
+                  <!--li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li-->
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+          <!--left side corner-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-2">
+                  <div class="row round">
+                      <div class="col-md-3">XS</div>
+                      <div class="col-md-3" style="padding-left: 12px;">S</div>
+                      <div class="col-md-3">M</div>
+                      <div class="col-md-3">ML</div>
+                  </div>
+                  <div class="row round">
+                    <div class="col-md-3" style="padding-left: 12px;">L</div>
+                    <div class="col-md-3">XL</div>
+                    <div class="col-md-3" style="padding-left:6px;">XXL</div>                        
+                  </div>
+                  <p class="text-center" >Leave a star on Github if the<br>
+                    repository was useful :)</p>
+                  <button type="button" class="btn btn-sm"><span class="glyphicon glyphicon-star" aria-hidden="true">
+                  </span><span style="padding-left:1px; font-weight: bold;">Star</span></button>
+                  <button type="button" class="btn btn-default btn-sm" style="margin-left:1px;width: 2.9em;">
+                    <span style="font-size: xx-small; font-weight: bold; color: black;">848</span></button>
+                    </div>
+              <!--div class="row"-->  <!--first role-->              
+              <div class="col-md-2">
+                <div class="thumbnail"><!--img 1-->
+                    <p  class=float-left>free shopping</p>
+                  <img src="images/cat tee.jpg" alt="...">
+                  <div class="caption">
+                    
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="thumbnail"><!--img 2-->
+                    <p  class=float-left>free shopping</p>
+                  <img src="images/cat tee.jpg" alt="...">
+                  <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="thumbnail"><!--img 3-->
+                    <p  class=float-left>free shopping</p>
+                  <img src="images/cat tee.jpg" alt="...">
+                  <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="thumbnail"><!--img 4-->
+                    <p  class=float-left>free shopping</p>
+                  <img src="images/cat tee.jpg" alt="...">
+                  <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!--/div--><!--end of role one--->
+            <div class="row d-flex justify-content-end">                
+            <div class="col-md-2">
+              <div class="thumbnail"><!--img 1-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="thumbnail"><!--img 2-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="thumbnail"><!--img 3-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="thumbnail"><!--img 4-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+           </div><!--end of role 2--->
+           <div class="row">                
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 1-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 2-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 3-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 4-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+              </div><!--end of role 3-->
+            <div class="row">                
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 1-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 2-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 3-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+              <div class="thumbnail"><!--img 4-->
+                  <p  class=float-left>free shopping</p>
+                <img src="images/cat tee.jpg" alt="...">
+                <div class="caption">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p style="color:gold">___</p>
+                    <p><span style="font-size: 10px; margin-right:2px;">$</span><strong style="font-size:x-large">10</strong>.90<span></span><br>
+                    <span style="color:gray">or 9<span style="font-size:large; padding-right: 3px;">x$1.21</span></p>
+                    <p class="cart">Add to cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      
+          </div>
+          </div>
+          
+        </div>
+                  
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>
